@@ -1,0 +1,20 @@
+{
+  "credentials": {
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "newEmployee": {
+    "firstName": "Aria",
+    "lastName": "Coleman",
+    "employeeId": "AI-90211",
+    "profilePicture": "test-data/assets/profile-picture.png"
+  },
+  "employeeUpdate": {
+    "jobTitle": "QA Automation Engineer",
+    "employmentStatus": "Full-Time Permanent"
+  },
+  "api": {
+    "baseUrl": "https://reqres.in/api",
+    "note": "OrangeHRM's public demo instance does not expose a stable, unauthenticated REST API for PIM employee records. Per the assessment's own fallback instruction, ReqRes is used to SIMULATE the API validation step (create/update/delete/get user) while the UI steps run against the real OrangeHRM employee record. Field-level values captured from the UI (employeeId, jobTitle, employmentStatus) are sent to / compared against the simulated API payload so the cross-check logic and assertions are real, even though the backing service is a stand-in. See README 'API Validation Strategy' for details and how to swap in a real OrangeHRM API/service."
+  }
+}

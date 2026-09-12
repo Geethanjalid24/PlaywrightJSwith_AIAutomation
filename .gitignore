@@ -1,0 +1,19 @@
+node_modules/
+.env
+
+# Playwright artifacts
+/test-results/
+/reports/html-report/
+/reports/test-artifacts/
+/reports/results/
+/reports/screenshots/
+/reports/self-healing/
+/reports/mcp-session-artifacts/
+/playwright-report/
+/blob-report/
+
+# Keep committed visual baselines
+!tests/**/__screenshots__/**
+
+npm-debug.log*
+.DS_Store

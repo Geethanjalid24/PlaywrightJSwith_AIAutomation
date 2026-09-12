@@ -1,0 +1,27 @@
+{
+  "name": "orangehrm-ai-automation",
+  "version": "1.0.0",
+  "description": "AI-driven Playwright automation framework for OrangeHRM Employee Lifecycle Management, built with Page Object Model, self-healing locators, visual (screenshot) regression, API cross-validation, and MCP integration for AI Test Engineer workflows.",
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:update-snapshots": "playwright test --update-snapshots",
+    "report": "playwright show-report reports/html-report",
+    "mcp:server": "npx @playwright/mcp@latest --config mcp.config.json",
+    "install:browsers": "playwright install --with-deps"
+  },
+  "keywords": ["playwright", "automation", "orangehrm", "ai-test-engineer", "pom", "mcp", "self-healing"],
+  "author": "AI Test Engineer",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@playwright/mcp": "^0.0.29",
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}

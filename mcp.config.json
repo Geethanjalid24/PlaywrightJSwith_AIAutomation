@@ -1,0 +1,37 @@
+{
+  "_comment": "MCP configuration for the Playwright MCP server. Lets an AI test engineer (Claude / any MCP-compatible AI client) drive a real browser, inspect the DOM/accessibility tree, and author or self-heal locators for this framework interactively.",
+  "browser": {
+    "browserName": "chromium",
+    "launchOptions": {
+      "headless": false,
+      "channel": "chrome"
+    },
+    "contextOptions": {
+      "viewport": { "width": 1440, "height": 900 },
+      "baseURL": "https://opensource-demo.orangehrmlive.com"
+    }
+  },
+  "server": {
+    "port": 8931,
+    "host": "localhost"
+  },
+  "capabilities": [
+    "core",
+    "tabs",
+    "pdf",
+    "history",
+    "wait",
+    "files",
+    "install"
+  ],
+  "outputDir": "reports/mcp-session-artifacts",
+  "network": {
+    "allowedOrigins": [
+      "https://opensource-demo.orangehrmlive.com",
+      "https://reqres.in"
+    ]
+  },
+  "vision": true,
+  "saveTrace": true,
+  "saveSession": true
+}
